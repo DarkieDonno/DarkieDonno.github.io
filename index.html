@@ -69,7 +69,7 @@
 							<p>The select element is used to create a drop-down list.</p>
 						</header>
 
-							<div action="/action_page.php">
+							<form action="/action_page.php">
 								<label for="cars">Choose a car:</label>
 								<select name="cars" id="cars">
 									<option value="volvo">Volvo</option>
@@ -79,8 +79,13 @@
 								</select>
 								<br><br>
 								<input type="submit" value="Submit">
-							</div>
-
+							</form>
+							<style>
+								/* Custom width for the select dropdown */
+								#cars {
+									width: 250px; /* Change this value as needed */
+								}
+							</style>
 					</section>
 
 				<!-- Section -->
