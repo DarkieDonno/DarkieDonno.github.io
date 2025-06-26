@@ -38,35 +38,59 @@
                 				</div>
             				</button>
             				<!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-            				<div class="cs-ul-wrapper">
-                				<ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                    				<li class="cs-li">
-                        				<a href="" class="cs-li-link cs-active">
-                            				Home
-                        				</a>
-                    				</li>
-                    				<li class="cs-li">
-                        				<a href="" class="cs-li-link">
-                            				About
-                        				</a>
-                    				</li>
-                    				<li class="cs-li">
-                        				<a href="" class="cs-li-link">
-                            				Services
-                        				</a>
-                    				</li>
-                    				<li class="cs-li">
-                        				<a href="" class="cs-li-link">
-                            				About Us
-                        				</a>
-                    				</li>
-                    				<li class="cs-li">
-                        				<a href="" class="cs-li-link">
-                            				FAQ
-                        				</a>
-                    				</li>
-                				</ul>
-            				</div>
+							<div class="cs-ul-wrapper">
+								<ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+									<li class="cs-li">
+										<a href="" class="cs-li-link cs-active">
+											Home
+										</a>
+									</li>
+									<li class="cs-li">
+										<a href="" class="cs-li-link">
+											About
+										</a>
+									</li>
+									<li class="cs-li">
+										<a href="" class="cs-li-link">
+											Services
+										</a>
+									</li>
+									<li class="cs-li">
+										<a href="" class="cs-li-link">
+											About Us
+										</a>
+									</li>
+									<li class="cs-li">
+										<a href="" class="cs-li-link">
+											FAQ
+										</a>
+									</li>
+								</ul>
+							</div>
+							<style>
+								.cs-ul {
+									display: flex;
+									flex-direction: row;
+									gap: 1.5rem;
+									list-style: none;
+									padding: 0;
+									margin: 0;
+								}
+								.cs-li {
+									display: flex;
+									align-items: center;
+								}
+								.cs-li-link {
+									text-decoration: none;
+									color: inherit;
+									padding: 0.5em 1em;
+								}
+								@media (max-width: 768px) {
+									.cs-ul {
+										flex-direction: column;
+									}
+								}
+							</style>
         				</nav>
         				<a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
         				<!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
